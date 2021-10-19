@@ -9,7 +9,7 @@ const [search, setsearch] = useState("Indore");
 
 useEffect(() => {
  const fetchApi = async () =>{
-   const url = `http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=fa73d04e2088221f9ea7d242767de7ec` ;
+   const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=fa73d04e2088221f9ea7d242767de7ec` ;
 
    const response = await fetch(url);
    const resjson =await response.json();
